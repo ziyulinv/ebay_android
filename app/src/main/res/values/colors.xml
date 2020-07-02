@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D97856</color>
+    <color name="colorPrimaryDark">#D97856</color>
+    <color name="colorAccent">#D0C0e0</color>
+    <color name="textColor">#2e67f7</color>
+    <color name="tab_selected_color">#111111</color>
+    <color name="tab_normal_color">#111111</color>
+    <color name="shopping_icon_color">#111111</color>
+    <color name="app_blue_eBay">#111111</color>
+    <color name="ic_launcher_background">#0063D1</color>
+    <color name="warning">#D04040</color>
+    <color name="black">#000000</color>
+    <color name="priceColor">#9cae47</color>
+    <color name="indicator">#673AB7</color>
+</resources>

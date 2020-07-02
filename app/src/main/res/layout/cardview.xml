@@ -1,0 +1,104 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    card_view:cardCornerRadius = "4dp"
+    android:layout_height = "300dp"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ebay_default" />
+
+        <TextView
+            android:id="@+id/titlePreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:scrollHorizontally="true"
+            android:paddingHorizontal="5dp"
+            android:text=""
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/shippingPreview"
+            android:paddingHorizontal="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+            <TextView
+                android:id="@+id/shipsFor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ships for "/>
+
+            <TextView
+                android:id="@+id/shippingPricePreview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$20.0"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free "
+                android:textStyle="bold"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/freeShipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipping"
+                android:visibility="gone"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/topRatedPreview"
+            android:layout_width="match_parent"
+            android:paddingHorizontal="5dp"
+            android:layout_height="wrap_content"
+            android:text="Top Rated Listing"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingHorizontal="5dp"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+            <TextView
+                android:id="@+id/conditionPreview"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="NEW"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textStyle="bold|italic"/>
+            <TextView
+                android:id="@+id/pricePreview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:text="$40.00"
+                android:textSize="18sp"
+                android:textColor="@color/priceColor"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false">
+    <LinearLayout
+        android:id="@+id/product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:fillViewport="true">
+        <LinearLayout
+            android:id="@+id/galleryLayout"
+            android:orientation="horizontal" android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:id="@+id/imageGallery1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter" />
+            <ImageView
+                android:id="@+id/imageGallery2"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter" />
+            <ImageView
+                android:id="@+id/imageGallery3"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter" />
+            <ImageView
+                android:id="@+id/imageGallery4"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter" />
+            <ImageView
+                android:id="@+id/imageGallery5"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter" />
+            <ImageView
+                android:id="@+id/imageGallery6"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter" />
+            <ImageView
+                android:id="@+id/imageGallery7"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/titleDetail"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="#000000"
+            android:textSize="17sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/priceDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$40.00"
+                android:textSize="18sp"
+                android:textColor="@color/priceColor"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/shippingPriceDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Ships for $1000"
+                android:scrollHorizontally="true"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/hr"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_height="1dp"
+            android:background="#888888"/>
+
+        <LinearLayout
+            android:id="@+id/featureVisible"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/information"
+                android:tint="#888888"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Product Features"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subtitleVisible"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Subtitle"/>
+            <TextView
+                android:id="@+id/subtitleDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="Subtitle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/brandVisible"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Brand"/>
+            <TextView
+                android:id="@+id/brandDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="Unbranded/Generic"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/hr2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_height="1dp"
+            android:background="#888888"/>
+
+        <LinearLayout
+            android:id="@+id/specVisible"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wrench"
+                android:tint="#888888"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Specifications:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/specDetail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 See Detail"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/specDetail2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 See Detail"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/specDetail3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 See Detail"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/specDetail4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 See Detail"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/specDetail5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 See Detail"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false">
+    <LinearLayout
+        android:id="@+id/sellerInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Seller Information"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/infoDetailKey1"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 User ID : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/infoDetailValue1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaa"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/infoDetailKey2"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 Feedback Rating Star : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/infoDetailValue2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaa"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/infoDetailKey3"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 Feedback Score : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/infoDetailValue3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaa"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/infoDetailKey4"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 Positive Feedback Percent : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/infoDetailValue4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaa"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/infoDetailKey5"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 Top Rated Seller : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/infoDetailValue5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaa"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/hr3"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_height="1dp"
+            android:background="#888888"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Return Policies"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/returnDetailKey1"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 Refund : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/returnDetailValue1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Money Back"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/returnDetailKey2"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 Returns Within : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/returnDetailValue2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 Days"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/returnDetailKey3"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 Shipping Cost Paid By : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/returnDetailValue3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buyer"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/returnDetailKey4"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 Returns Accepted : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/returnDetailValue4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Returns Accepted"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/returnDetailKey5"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 International Returns Accepted : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/returnDetailValue5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Returns Not Accepted"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/returnDetailKey6"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 International Refund : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/returnDetailValue6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Returns Not Accepted"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/returnDetailKey7"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 International Returns Within : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/returnDetailValue7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Returns Not Accepted"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/returnDetailKey8"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 International Shipping Cost Paid By : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/returnDetailValue8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Returns Not Accepted"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/returnDetailKey9"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 Description : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/returnDetailValue9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Returns Not Accepted"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false">
+    <LinearLayout
+        android:id="@+id/Shipping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Shipping Information"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shippingDetailKey1"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 Handling Time : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/shippingDetailValue1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shippingDetailKey2"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 One Day Shipping Available :  "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/shippingDetailValue2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shippingDetailKey3"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 Shipping Type : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/shippingDetailValue3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flat"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shippingDetailKey4"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 Shipping From : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/shippingDetailValue4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="China"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shippingDetailKey5"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 Ship To Location : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/shippingDetailValue5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Worldwide"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shippingDetailKey6"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u2022 Expedited Shipping : "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/shippingDetailValue6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
